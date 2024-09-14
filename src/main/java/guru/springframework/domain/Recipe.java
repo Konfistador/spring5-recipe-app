@@ -9,8 +9,8 @@ import java.util.Set;
 /**
  * Created by jt on 6/13/17.
  */
-@EqualsAndHashCode(exclude = {"notes", "ingredients"})
 @Data
+@EqualsAndHashCode(exclude = {"notes", "ingredients"})
 @Entity
 public class Recipe {
 

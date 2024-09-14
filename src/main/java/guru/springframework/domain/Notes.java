@@ -4,12 +4,14 @@ import lombok.*;
 
 import javax.persistence.*;
 
+
+
 /**
  * Created by jt on 6/13/17.
  */
 
-@EqualsAndHashCode(exclude = "recipe")
 @Data
+@EqualsAndHashCode(exclude = "recipe")
 @Entity
 public class Notes {
 
