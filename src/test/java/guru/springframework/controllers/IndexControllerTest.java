@@ -42,7 +42,7 @@ public class IndexControllerTest {
 
         assertEquals( "index", viewName );
 
-        verify(model).addAttribute( stringCaptor.capture(), recipeSetCaptor.capture() );
+        verify(model,times( 1 )).addAttribute( stringCaptor.capture(), recipeSetCaptor.capture() );
 
         String capturedStringKey = stringCaptor.getValue();
         Set<Recipe> capturedSet = recipeSetCaptor.getValue();
